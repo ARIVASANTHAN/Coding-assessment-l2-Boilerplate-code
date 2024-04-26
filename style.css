@@ -1,36 +1,204 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:300");
-html,
-body {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-}
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(to right bottom, #873572, black);
-}
-a {
-  display: inline-block;
-  color: lightgrey;
-  font-size: 16px;
-  font-family: "Roboto", sans-serif;
-  white-space: nowrap;
-  padding: 12px;
-  border: 1px solid white;
-  border-radius: 30px;
-  text-decoration: none;
-  transition: all 0.15s ease-in-out;
-}
 
-a:hover {
-  background: rgba(0, 0, 0, 0.23);
-  color: white;
-  transform: scale(1.03);
-  text-decoration: none;
-}
-a:active {
-  transform: scale(0.98);
-}
+:root {
+    --primary-color: #f1faff;
+    --text-dark: #030712;
+    --extra-light: #fbfbfb;
+    --white: #ffffff;
+    --max-width: 1200px;
+  }
+  
+  * {
+      font-family: "Inter", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 100px;
+      font-style: normal;
+      font-variation-settings:"slnt" 0;
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+  }
+  
+  .section__container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 3rem 1rem;
+  }
+  
+  .section__title {
+    text-shadow: 2px 2px 4px rgb(65, 63, 63); 
+    padding-bottom: 0.5rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    position: relative;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  img {
+    width: 100%;
+    display: block;
+  }
+  
+  .musthave__nav {
+    width: 650px;
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem;
+    background-color:rgba(242, 242, 242, 1);
+    border-radius: 2px;
+    margin-left: 280px;
+  }
+  
+  .musthave__nav a {
+    color: #030712;
+    padding-top: 15px;
+    font-size: larger;
+    font-weight: 600;
+    transition: 0.3s;
+    margin-left: 12px;
+  }
+  
+  .musthave__nav a:hover {
+    
+    border-radius: 4px;
+    background-color: #030712;
+    color: #fbfbfb;
+  }
+  
+  .image {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+  
+  .musthave__card {
+    display: grid;
+    gap: 0.5rem;
+    color: var(--text-dark);
+  }
+  
+  .musthave__card h4 {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  
+  .musthave__card p {
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+  
+  .musthave__card p del {
+    font-weight: 400;
+  }
+  
+  @media (width < 900px) {
+    header {
+      margin-top: 5rem;
+    }
+  
+    .musthave__grid {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+  
+    .news__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+  }
+  
+  
+  .v{
+    height: 358px;
+  }
+  .offer{
+    font-weight: bold;
+    color: red;
+  }
+  del{
+    margin-left: 10px;
+    margin-right: 10px;
+    color: rgb(168, 166, 166);
+    font-weight: lighter;
+  }
+  .g{
+    width: 200px;
+    text-align: center;
+  }
+  
+  .mensvg{
+    margin-right: px;
+  }
+  
+  .svg-container {
+    position: absolute;
+    width: 400px;
+    height: 150px;
+    margin: 5px;
+  }
+  .badge {
+    position: absolute;
+    background-color: white;
+    color: rgba(41, 33, 33, 0.918);
+    padding: 10px 11px;
+    border-radius: 3px;
+    font-size: 15px;
+    font-weight: 550;
+  }
+  
+  .badgee {
+    position: absolute;
+    background-color: white;
+    color: rgba(41, 33, 33, 0.918);
+    padding: 10px 11px;
+    border-radius: 3px;
+    font-size: 15px;
+    font-weight: 550;
+    width: 120px;
+    text-align: center;
+  }
+  
+  .space{
+    padding-left: 15px;
+  }
+  .add{
+    color: white;
+    background-color: #030712;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+  }
+  .add:hover{
+    cursor: pointer;
+  }
+  .vendor
+  {
+    font-weight: lighter;
+    color: rgb(51, 48, 48);
+  }
+  .men1{
+    font-size: large;
+    font-weight:bold
+  }
+  
+  .image-column{
+    display: none;
+  }
+  
+  img{
+    border-radius: 4px;
+  }
 
+  a .mensvg{
+    display: none;
+  }
+
+  a:hover .mensvg{
+    display: inline-block; 
+  }
+  
