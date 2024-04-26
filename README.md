@@ -18,7 +18,7 @@ To get started with Fashion Website, follow these steps:
 2. Navigate to the project directory: `cd Coding-assessment-l2-Boilerplate-code`
 3. Install dependencies: `npm install`
 4. Start the development server: `npm start`
-5. Open your web browser and go to `` to view the website.
+5. Open your web browser and go to `https://arivasanthan.github.io/Coding-assessment-l2-Boilerplate-code/` to view the website live host.
 
 ## Usage
 
